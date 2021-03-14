@@ -1,4 +1,4 @@
-({ context, payload }) => {
+async ({ context, payload }) => {
   const { cache } = context.storage
   const octokit = context.octokit
   const { action, issue } = payload
