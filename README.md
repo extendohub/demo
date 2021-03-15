@@ -11,10 +11,13 @@ When using the extended-GitHub browser extension, users get enhanced rendering o
 
 ### Embedded math
 
-The following is a math equation in LaTeX inline ```$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$``` and this next one is the same formula but in display (on it's own line) mode ```$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$```.
+The following is a math equation in LaTeX inline ```\( \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \)``` and this next one is the same formula but in display (on it's own line) mode ```$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$```.
 
-Could also use \\( \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \\) for inline or \\[ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} ]\\ for display math.
+Could also use `\( \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \)` for inline or `\[ \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} ]\` for display math.
 
+```
+\( \sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6} \)
+```
 
 This next one is in MathML which is surprisingly more complicated.
 <math>
