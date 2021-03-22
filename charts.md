@@ -57,7 +57,8 @@ gantt
     section Last section
     Describe gantt syntax               :after doc1, 3d
     Add gantt diagram to demo page      :20h
-    Add another diagram to demo page    :48h```
+    Add another diagram to demo page    :48h
+```
 
 ## [Class diagram](https://mermaid-js.github.io/mermaid/#/classDiagram)
 ```mermaid
