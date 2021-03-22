@@ -7,20 +7,9 @@ When using the extended-GitHub browser extension, users get enhanced rendering o
 
 ### Full file
 
-* Browsing to [this MP4 file](clearlynoticed.mp4) renders the MP4 in-place in GitHub
+* **MP4** -- Browsing to [this MP4 file](clearlynoticed.mp4) renders the MP4 in-place in GitHub
 
+### Embedded content
 
-### Embedded mermaid
-
-```mermaid
-gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
-
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
-```
+* [**Math**](math.md) -- Embed complex TeX/LaTeX, MathML, or ASCIImath input inline in your text or as stand-alone code blocks
+* [**Charts**](charts.md) -- Embed Gantt charts, sequence or class diagrams, Git graphs and more as stand-alone code blocks
