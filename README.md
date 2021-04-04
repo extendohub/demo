@@ -7,8 +7,9 @@ When using the extended-GitHub browser extension, users get enhanced rendering o
 
 ### Full file
 
-* **Jupyter notebooks** -- Browsing to [this Juptyer notebook file](Lorenz.ipynb) executes and renders the notebook in-place in GitHub
-* **MP4** -- Browsing to [this MP4 file](clearlynoticed.mp4) renders the MP4 in-place in GitHub
+* **Jupyter notebooks** -- Check out [this Juptyer notebook file](Lorenz.ipynb). Note it's also executed!
+* **MP4** -- Bored? Watch [this MP4 file](clearlynoticed.mp4)
+* **Excel** -- Curious? Checkout [this XLSX file](olympics.xlsx) for Olympic medal standings
 
 ### Embedded content
 
