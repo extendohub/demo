@@ -16,7 +16,7 @@ When using the extended-GitHub browser extension, users get enhanced rendering o
 * [**Math**](math.md) -- Embed complex TeX/LaTeX, MathML, or ASCIImath like this (`$\sqrt[n]{1+x+x^2+x^3+\dots+x^n}$`) directly inline in your text or as stand-alone code blocks
 * [**Charts**](charts.md) -- Embed Gantt charts, sequence or class diagrams, and more as stand-alone code blocks. You can even show Git graphs like the on below. [Community demand](https://github.com/github/markup/issues/533).
 
-## How does it work?
+## How's it work?
 
 ```mermaid
 stateDiagram-v2
