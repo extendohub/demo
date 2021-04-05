@@ -49,7 +49,7 @@ stateDiagram-v2
         more...
     }  
   }
-  state ServerlessCompute {
+  state Serverless {
     Deno
     Node
     Docker
@@ -69,11 +69,11 @@ stateDiagram-v2
   RenderExtensions --> Registry
   EventExtensions --> Registry
   Registry --> Render
-  Render --> ServerlessCompute
-  Events --> ServerlessCompute
+  Render --> Serverless
+  Events --> Serverless
   Registry --> Events
-  ServerlessCompute --> Browser
-  ServerlessCompute --> APIs
-  ServerlessCompute --> ...
+  Serverless --> Browser
+  Serverless --> APIs
+  Serverless --> ...
 ```
 
