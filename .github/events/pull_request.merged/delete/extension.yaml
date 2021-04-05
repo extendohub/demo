@@ -1,0 +1,7 @@
+name: Delete merged branches
+description: Delete branches for merged PRs. Example extension based on [Delete merged branch](https://github.com/svanboxel/delete-merged-branch) for demonstration purposes.
+
+handler: 
+  uses: ./index.js
+  with:
+    deleteClosePRs: false
