@@ -6,4 +6,4 @@ This example highlights how we can embed data in the middle of a markdown page. 
 repositories | where watcherCount > 1000
 ```
 
-This is some content that is javascript `${data/value(loader=javascript) 3 + 7}
+This is some content that is javascript `${data/value(loader=javascript) 3 + 7}`
