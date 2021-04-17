@@ -16,6 +16,6 @@ render:
   options:
     description: Cool test data
     mark: bar
-    encoding: {x:{field:'a',type:'ordinal'},y:{field:'b',type:'quantitative'}}
+    encoding: {x: {field: 'a', type: 'ordinal'}, y: { field: 'b', type: 'quantitative'}}
   data: {"a": 1, "b": 3, "c": 5, "d": 7, "e": 3, "f": 4}
 ```
