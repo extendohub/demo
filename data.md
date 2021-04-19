@@ -32,15 +32,14 @@ issues
 | sort by month asc 
 `
   const results = await data.query(kql, target.resource, {}, {}) 
-  console.dir(result.value)
   
   return {
-    content: results, 
+    content: results.value, 
     access: 1, 
     renderer: 'data/vega', 
     options: {
       mark: 'bar',
-      encoding: {x: {field: 'a', type: 'ordinal'}, y: { field: 'b', type: 'quantitative'}}
+      encoding: {x: {field: 'month', type: 'ordinal'}, y: { field: 'count', type: 'quantitative'}}
     }
   }
 }
