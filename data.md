@@ -31,7 +31,7 @@ async ({context}) => {
     renderer: 'data/vega', 
     options: {
       mark: 'bar',
-      encoding: {x: {field: 'month', type: 'ordinal'}, y: { field: 'count', type: 'quantitative'}}
+      encoding: {x: {field: 'a', type: 'ordinal'}, y: { field: 'b', type: 'quantitative'}}
     }
   }
 }
