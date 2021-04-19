@@ -3,14 +3,14 @@ There are lots of scenarios for wanting to render data in GitHub. Perhaps a tabl
 
 ## Simple rendering of static data from a file
 
-Here we load data from a file in GitHub (`./olympics.csv`) and render it as a normal HTML table. The file can be anywhere the current user can read. For fun, the rendering markup in the \`\` code block shows how you can control rendering by defining *options*. In this case we indicate that there's a header row in the CSV.
+Here we load data from a file in GitHub (`./olympics.csv`) and render it as a normal HTML table. The file can be anywhere the current user can read. For fun, the rendering markup in the <code>\`...\`</code> code block shows how you can control rendering by defining *options*. In this case we indicate that there's a header row in the CSV.
 ```data/htmlTable[headings=true](content=./olympics.csv) 
 ```
 
 ## Inline rendering of live data from Kusto  
 This example highlights how we can embed data in the middle of a markdown page as part of the normal text flow. For example, this repo has `${data/value(content=kql)[option1=73] repositories | where id == context.repoId | summarize return = any(watcherCount)}` stars. 👈 See what we did there? We know the star count because the `<code>` element has the simplest possible Kusto query that runs and gets the number of watchers, and then renders the result as a *value* (i.e., just a simple `<code>` block). 
 
-This is another inline example but rather than running some KQL in Kusto, we have some inline JavaScript. After some deep thought and hard computation we know that the answer is `${data/value(content=javascript)[seed=6] ({options}) => { return options.seed * 7 }}`.
+This is another inline example but rather than running some KQL in Kusto, we have some inline JavaScript. After some deep thought and hard computation we know that the answer is `${data/value(content=javascript,seed=6) ({options}) => { return options.seed * 7 }}`.
 
 ## [Vega](https://vega.github.io/vega/) based charts with embedded JSON
 Now let's get a bit more interesting with the rendering. The example here renders using the [Vega](https://vega.github.io/vega/) visualization library. To keep the example simple, we're just using a bar chart but the full power of Vega is at your fingertips. Notice in the markup that we're using GitHub config-as-code YAML to actually define the Vega inputs as they are a bit verbose. There are other ways to do it and over time we can simplify the common paths.
