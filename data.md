@@ -23,8 +23,17 @@ render:
 
 ```dynamic(content=javascript)
 async ({context}) => {
-  const { data } = context
-  const results = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
+  const { data, target } = context
+  const kql = `
+issues
+| where repositoryId == 3 and createdAt > datetime('2020-01-01')
+| summarize count=count() by month=endofmonth(createdAt) 
+| project month=format_datetime(month, 'yyyy-MM-dd'), count=['count']
+| sort by month asc 
+`
+  const results = await data.query(kql, target.resource, {}, {}) 
+  console.dir(result.value)
+  
   return {
     content: results, 
     access: 1, 
