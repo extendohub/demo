@@ -11,7 +11,7 @@ And a bar chart with data as a literal JSON object
 ```ddata/barchart[encoding={x:{field:'a',type:'ordinal'},y:{field:'b',type:'quantitative'}}](content=json)
 {"a": 1, "b": 3, "c": 5, "d": 7, "e": 3, "f": 4}
 ```
-```data/vega2(content=config)
+```data/vega(content=config)
 render:
   options:
     description: Cool test data
