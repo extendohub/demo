@@ -18,7 +18,7 @@ When using the extended-GitHub browser extension, users get enhanced rendering o
 
 ## How's it work?
 
-```mermaid
+```github/mermaid
 stateDiagram-v2
   state Users {
     state Content {
