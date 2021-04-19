@@ -3,7 +3,7 @@ There are lots of scenarios for wanting to render data in GitHub. Perhaps a tabl
 
 ## Simple rendering of static data from a file
 
-Here we load data from a file in GitHub (`./olympics.csv) and render it as a normal HTML table. The file can be anywhere the current user can read. For fun, the rendering markup in the \`\` code block shows how you can control rendering by defining *options*. In this case we indicate that there's a header row in the CSV.
+Here we load data from a file in GitHub (`./olympics.csv`) and render it as a normal HTML table. The file can be anywhere the current user can read. For fun, the rendering markup in the \`\` code block shows how you can control rendering by defining *options*. In this case we indicate that there's a header row in the CSV.
 ```data/htmlTable[headings=true](content=./olympics.csv) 
 ```
 
