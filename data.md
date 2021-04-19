@@ -34,7 +34,7 @@ issues
   const results = await data.query(kql, target.resource, {}, {}) 
   
   return {
-    content: results.value[0], 
+    content: results.value, 
     access: 1, 
     renderer: 'data/vega', 
     options: {
