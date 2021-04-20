@@ -1,1 +1,1 @@
-() => console.log('this is a push handler')
+({ context }) => context.log('this is a push handler')
