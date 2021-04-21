@@ -8,7 +8,7 @@ Here we load data from a file in GitHub (`./olympics.csv`) and render it as a no
 ```
 
 ## Inline rendering of live data from Kusto  
-This example highlights how we can embed data in the middle of a markdown page as part of the normal text flow. For example, this repo has `${data/value(content=kql)[option1=73] repositories | where id == context.repoId | summarize return = any(watcherCount)}` stars. 👈 See what we did there? We know the star count because the `<code>` element has the simplest possible Kusto query that runs and gets the number of watchers, and then renders the result as a *value* (i.e., just a simple `<code>` block). 
+This example highlights how we can embed data in the middle of a markdown page as part of the normal text flow. For example, this repo has `${data/value(content=kql) repositories | where id == context.repoId | summarize return = any(watcherCount)}` stars. 👈 See what we did there? We know the star count because the `<code>` element has the simplest possible Kusto query that runs and gets the number of watchers, and then renders the result as a *value* (i.e., just a simple `<code>` block). 
 
 This is another inline example but rather than running some KQL in Kusto, we have some inline JavaScript. After some deep thought and hard computation we know that the answer is `${data/value(content=javascript,seed=6) ({options}) => { return options.seed * 7 }}`.
 
