@@ -1,9 +1,6 @@
 async ({ context, payload }) => {
-  const { cache } = context.storage
-  const octokit = context.octokit
-  const { action, issue } = payload
-  cache.set(action, issue.updated_at)
-  console.log(cache.get(action))
-  const rateLimit = await octokit.rateLimit.get()
-  console.dir(rateLimit) 
+  const { github, issue, actor } = context
+  console.log(`Detected issue ${payload.action} on issue ${issue.number} by ${actor}`)
+  const rateLimit = await github.rateLimit.get()
+  console.dir(`The remaining rate limit is ${rateLimit}`) 
 }
