@@ -13,7 +13,7 @@ graph TD;
 ```
 
 ## [Sequence diagram](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-```github/mermaid
+```github/mermaid#sequence
 sequenceDiagram
     participant Alice
     participant Bob
