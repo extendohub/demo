@@ -4,7 +4,8 @@ You can add charts to your markdown (files, issues, ...) using [Mermaid](https:/
 Here are a few examples taken from the Mermaid site.
 
 ## [Flowchart](https://mermaid-js.github.io/mermaid/#/flowchart?id=flowcharts-basic-syntax)
-```github/mermaid
+```
+/// github/mermaid
 graph TD;
     A-->B;
     A-->C;
@@ -13,7 +14,8 @@ graph TD;
 ```
 
 ## [Sequence diagram](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-```github/mermaid#sequence
+```
+/// github/mermaid#sequence
 sequenceDiagram
     participant Alice
     participant Bob
@@ -28,7 +30,8 @@ sequenceDiagram
 ```
 
 ## [Gantt chart](https://mermaid-js.github.io/mermaid/#/gantt)
-```github/mermaid
+```
+/// github/mermaid
 gantt
     dateFormat  YYYY-MM-DD
     title       Adding GANTT diagram functionality to mermaid
@@ -61,7 +64,8 @@ gantt
 ```
 
 ## [Class diagram](https://mermaid-js.github.io/mermaid/#/classDiagram)
-```github/mermaid
+```
+/// github/mermaid
 classDiagram
 Class01 <|-- AveryLongClass : Cool
 Class03 *-- Class04
@@ -80,7 +84,8 @@ Class08 <--> C2: Cool label
 
 ## [Git graph](https://mermaid-js.github.io/mermaid/#/?id=git-graph-exclamation-experimental)
 
-```github/mermaid
+```
+/// github/mermaid
 gitGraph:
 options
 {
@@ -100,7 +105,8 @@ merge newbranch
 ```
 
 ## [Entity Relationship diagrams](https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram)
-```github/mermaid
+```
+/// github/mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
