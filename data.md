@@ -30,26 +30,20 @@ OK, so now it gets more interesting. There's a fair bit going on in this example
 
 That brings us to next interesting point that the rendering of this data is dynamically determined by the result of running the JavaScript. In the previous examples the *language* markup after the \`\`\` was used to pick a rendering. Here, the code returns a particular structure that has the `content` and the `renderer` along with it's `options`. This means you can dynamically decide what data to gather and then dynamically pick the best rendering of that data.
 
+
+## [Observables Plot](https://github.com/observablehq/plot) based charts with live Kusto data
+
 ```
 /// dynamic(content=javascript)
 async ({context}) => {
-  const { data, target } = context
-  const kql = `
-issues
-| where repositoryId == 3 and createdAt > datetime('2019-01-01')
-| summarize count=count() by month=endofmonth(createdAt) 
-| project month=format_datetime(month, 'yyyy-MM-dd'), count=['count']
-| sort by month asc 
-`
-  const results = await data.query(kql, target.resource, {}, {}) 
-  
+  const data = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
+
   return {
-    content: results.value, 
+    content: data, 
     access: 1, 
-    renderer: 'data/vega', 
+    renderer: 'data/plot', 
     options: {
-      mark: 'bar',
-      encoding: {x: {field: 'month', type: 'ordinal'}, y: { field: 'count', type: 'quantitative'}}
+      layout: {x: 'a', y: 'b'}
     }
   }
 }
