@@ -43,7 +43,9 @@ async ({context}) => {
     access: 1, 
     renderer: 'data/plot', 
     options: {
-      layout: {x: 'a', y: 'b'}
+      marks: [
+        { type: 'line', data: 'content', layout: {x: 'a', y: 'b'}}
+      ]
     }
   }
 }
