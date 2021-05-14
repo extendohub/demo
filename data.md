@@ -30,6 +30,30 @@ OK, so now it gets more interesting. There's a fair bit going on in this example
 
 That brings us to next interesting point that the rendering of this data is dynamically determined by the result of running the JavaScript. In the previous examples the *language* markup after the \`\`\` was used to pick a rendering. Here, the code returns a particular structure that has the `content` and the `renderer` along with it's `options`. This means you can dynamically decide what data to gather and then dynamically pick the best rendering of that data.
 
+```
+/// dynamic(content=javascript)
+async ({context}) => {
+  const { data, target } = context
+  const kql = `
+issues
+| where repositoryId == 3 and createdAt > datetime('2019-01-01')
+| summarize count=count() by month=endofmonth(createdAt) 
+| project month=format_datetime(month, 'yyyy-MM-dd'), count=['count']
+| sort by month asc 
+`
+  const results = await data.query(kql, target.resource, {}, {}) 
+  
+  return {
+    content: results.value, 
+    access: 1, 
+    renderer: 'data/vega', 
+    options: {
+      mark: 'bar',
+      encoding: {x: {field: 'month', type: 'ordinal'}, y: { field: 'count', type: 'quantitative'}}
+    }
+  }
+}
+```
 
 ## [Observables Plot](https://github.com/observablehq/plot) based charts with live Kusto data
 
