@@ -58,17 +58,15 @@ issues
 ## [Observables Plot](https://github.com/observablehq/plot) charts with embedded data
 
 ```
-/// dynamic(content=javascript)
-async ({context}) => {
-  const data = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
+/// data/plot(content=javascript)
+async () => {
+  const content = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
 
   return {
-    content: data, 
-    access: 1, 
-    renderer: 'data/plot', 
+    content, 
     options: {
       marks: [
-        { type: 'line', data: 'content', layout: {x: 'a', y: 'b'}}
+        { type: 'line', layout: {x: 'a', y: 'b'}}
       ]
     }
   }
@@ -76,17 +74,15 @@ async ({context}) => {
 ```
 
 ```
-/// dynamic(content=javascript)
-async ({context}) => {
-  const data = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
+/// data/plot(content=javascript)
+async () => {
+  const content = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
 
   return {
-    content: data, 
-    access: 1, 
-    renderer: 'data/plot', 
+    content, 
     options: {
       marks: [
-        { type: 'barX', data: 'content', layout: {x1: 0, x2: 'b',  y: 'a'}}
+        { type: 'barX', layout: {x1: 0, x2: 'b', y: 'a'}}
       ]
     }
   }
