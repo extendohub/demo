@@ -55,7 +55,7 @@ issues
 }
 ```
 
-## [Observables Plot](https://github.com/observablehq/plot) based charts with live Kusto data
+## [Observables Plot](https://github.com/observablehq/plot) charts with embedded data
 
 ```
 /// dynamic(content=javascript)
