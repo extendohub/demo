@@ -4,8 +4,7 @@ There are lots of scenarios for wanting to render data in GitHub. Perhaps a tabl
 ## Simple rendering of static data from a file
 
 Here we load data from a file in GitHub (`./olympics.csv`) and render it as a normal HTML table. The file can be anywhere the current user can read. For fun, the rendering markup in the <code>\`...\`</code> code block shows how you can control rendering by defining *options*. In this case we indicate that there's a header row in the CSV.
-```
-/// data/htmlTable[headings=true](content=./olympics.csv) 
+```data/htmlTable[headings=true](content=./olympics.csv) 
 ```
 
 ## Inline rendering of live data from Kusto  
@@ -18,8 +17,7 @@ This is another inline example but rather than running some KQL in Kusto, we hav
 ## [Vega](https://vega.github.io/vega/) based charts with embedded JSON
 Now let's get a bit more interesting with the rendering. The example here renders using the [Vega](https://vega.github.io/vega/) visualization library. To keep the example simple, we're just using a bar chart but the full power of Vega is at your fingertips. Notice in the markup that we're using GitHub config-as-code YAML to actually define the Vega inputs as they are a bit verbose. There are other ways to do it and over time we can simplify the common paths.
 
-```
-/// data/vega(content=config)
+```data/vega(content=config)
 render:
   options:
     description: Cool test data
@@ -32,8 +30,7 @@ OK, so now it gets more interesting. There's a fair bit going on in this example
 
 That brings us to next interesting point that the rendering of this data is dynamically determined by the result of running the JavaScript. In the previous examples the *language* markup after the \`\`\` was used to pick a rendering. Here, the code returns a particular structure that has the `content` and the `renderer` along with it's `options`. This means you can dynamically decide what data to gather and then dynamically pick the best rendering of that data.
 
-```
-/// dynamic(content=javascript)
+```dynamic(content=javascript)
 async ({context}) => {
   const { data, target } = context
   const kql = `
@@ -59,8 +56,7 @@ issues
 
 ## [Observables Plot](https://github.com/observablehq/plot) charts with embedded data
 
-```
-/// data/plot(content=javascript)
+```data/plot(content=javascript)
 async () => {
   const content = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
 
@@ -75,8 +71,7 @@ async () => {
 }
 ```
 
-```
-/// data/plot(content=javascript)
+```data/plot(content=javascript)
 async () => {
   const content = [{"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43}, {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}, {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}]
 
