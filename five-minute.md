@@ -12,11 +12,11 @@ An Observable notebook consists of cells. Each cell is a snippet of JavaScript. 
 ```
 
 ```{js}
-  let sum = 0;
+  let sum = 0
   for (let i = 0; i <= 100; ++i) {
-    sum += i;
+    sum += i
   }
-  return sum;
+  return sum
 ```
 
 Cells can have names. This allows a cell’s value to be referenced by other cells.
@@ -122,3 +122,22 @@ value
 ```
 
 You can import cells from other notebooks. To demonstrate how custom user interfaces can expose arbitrary values to other cells, here’s a brushable scatterplot of cars showing the inverse relationship between horsepower and fuel efficiency.
+
+```{imports}
+{ viewof selection as cars } from ./scatter.md 
+```
+
+```{js}(inputs=viewof cars)
+viewof_cars
+```
+
+```{js}(inputs=cars)
+cars
+```
+
+```{md}(inputs=cars)
+${Array.from(new Set(cars.map(c => c.name)))
+  .sort()
+  .map(c => `* <a target="_blank" href="https://google.com/search?tbm=isch&q=${escape(c)}">${c}</a>`)
+  .join("\n")}
+```
