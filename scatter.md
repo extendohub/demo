@@ -50,11 +50,9 @@ This chart shows the inverse relationship between engine power (*y*-axis) and fu
   }
 
   return svg.node();
-}
-);
 ```
 ```{js#selection}(inputs=Generators,viewof selection)
-Generators.input(viewof_selection))
+Generators.input(viewof_selection)
 ```
 ```{js}(inputs=selection)
 selection
@@ -105,11 +103,11 @@ g => g
 ```
 
 ```{imports}
-cars-2 load ./cars-2.csv
+cars2 load ./cars-2.csv
 ```
 
-```{js#data}(inputs=d3;cars-2)
-Object.assign(d3.csvParse((await cars-2).text(), ({Name: name, Miles_per_Gallon: x, Horsepower: y}) => ({name, x: +x, y: +y})), {x: "Miles per Gallon", y: "Horsepower"})
+```{js#data}(inputs=d3;cars2)
+Object.assign(d3.csvParse((await cars2).text(), ({Name: name, Miles_per_Gallon: x, Horsepower: y}) => ({name, x: +x, y: +y})), {x: "Miles per Gallon", y: "Horsepower"})
 ```
 
 ```{md}
