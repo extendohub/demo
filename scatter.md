@@ -51,7 +51,7 @@ This chart shows the inverse relationship between engine power (*y*-axis) and fu
 
   return svg.node();
 ```
-```{js#selection}(inputs=Generators,viewof selection)
+```{js#selection}(inputs=Generators;viewof selection)
 Generators.input(viewof_selection)
 ```
 ```{js}(inputs=selection)
