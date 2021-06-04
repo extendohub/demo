@@ -107,7 +107,7 @@ cars2 load ./cars-2.csv
 ```
 
 ```{js#data}(inputs=d3;cars2)
-console.log((await cars2).text())
+// console.log((await cars2).text())
 Object.assign(d3.csvParse((await cars2).text(), ({Name: name, Miles_per_Gallon: x, Horsepower: y}) => ({name, x: +x, y: +y})), {x: "Miles per Gallon", y: "Horsepower"})
 ```
 
