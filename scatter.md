@@ -2,7 +2,7 @@
 type: ghnb
 ---
 
-```{md}
+```{md}(inputs=data)
 # Brushable Scatterplot
 
 This chart shows the inverse relationship between engine power (*y*-axis) and fuel efficiency (*x*-axis) in ${data.length} cars from 1970–1982. Brushing this scatterplot will show the selected data points.
