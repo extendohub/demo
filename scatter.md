@@ -1,14 +1,14 @@
 ---
-type: ghnb
+type: live
 ---
 
-```{md}(inputs=data)
+```{md(data)}
 # Brushable Scatterplot
 
 This chart shows the inverse relationship between engine power (*y*-axis) and fuel efficiency (*x*-axis) in ${data.length} cars from 1970–1982. Brushing this scatterplot will show the selected data points.
 ```
 
-```{js#viewof selection}(inputs=d3;width;height;xAxis;yAxis;data;x;y)
+```{javascript#viewof selection(d3,width,height,xAxis,yAxis,data,x,y)}
   const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height])
       .property("value", []);
@@ -51,32 +51,33 @@ This chart shows the inverse relationship between engine power (*y*-axis) and fu
 
   return svg.node();
 ```
-```{js#selection}(inputs=Generators;viewof selection)
+
+```{javascript#selection(Generators,viewof selection)}
 Generators.input(viewof_selection)
 ```
-```{js}(inputs=selection)
+```{javascript(selection)}
 selection
 ```
 
-```{js#height}
+```{javascript#height}
 600
 ```
-```{js#margin}
+```{javascript#margin}
 {top: 20, right: 30, bottom: 30, left: 40}
 ```
-```{js#x}(inputs=d3;data;margin;width)
+```{javascript#x(d3,data,margin,width)}
 d3.scaleLinear()
   .domain(d3.extent(data, d => d.x)).nice()
   .range([margin.left, width - margin.right])
 ```
 
-```{js#y}(inputs=d3;data;height;margin)
+```{javascript#y(d3,data,height,margin)}
 d3.scaleLinear()
   .domain(d3.extent(data, d => d.y)).nice()
   .range([height - margin.bottom, margin.top])
 ```
 
-```{js#xAxis}(inputs=height;margin;d3;x;width;data)
+```{javascript#xAxis(height,margin,d3,x,width,data)}
 g => g
     .attr("transform", `translate(0,${height - margin.bottom})`)
     .call(d3.axisBottom(x))
@@ -90,7 +91,7 @@ g => g
         .text(data.x))
 ```
 
-```{js#yAxis}(inputs=margin;d3;y;data)
+```{javascript#yAxis(margin,d3,y,data)}
 g => g
     .attr("transform", `translate(${margin.left},0)`)
     .call(d3.axisLeft(y))
@@ -106,14 +107,12 @@ g => g
 cars2 load ./cars-2.csv
 ```
 
-```{js#data}(inputs=d3;cars2)
+```{javascript#data(d3,cars2)}
 Object.assign(d3.csvParse(await (await cars2).text(), ({Name: name, Miles_per_Gallon: x, Horsepower: y}) => ({name, x: +x, y: +y})), {x: "Miles per Gallon", y: "Horsepower"})
 ```
 
-```{md}
 Thanks to [John Alexis Guerra Gómez](/@john-guerra) for suggestions.
-```
 
-```{js#d3}(inputs=require)
+```{javascript#d3(require)}
 require("d3@6")
 ```
