@@ -125,7 +125,6 @@ You can import cells from other notebooks. To demonstrate how custom user interf
 
 ```{imports}
 { viewof selection as viewof cars } from ./scatter.md 
-{ selection as cars } from ./scatter.md 
 ```
 
 ```{javascript(viewof cars)}
