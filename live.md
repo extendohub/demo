@@ -3,9 +3,9 @@ type: live
 ---
 ```{javascript(render)}
 const foo = 42
-return render(foo, 'live/test')
+return render(foo, 'live/value', { color: 'blue' })
 ```
 
-```{javascript}[live/test]
+```{javascript}[live/value(color=red]
 42
 ```
