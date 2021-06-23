@@ -1,4 +1,5 @@
-This is a reference to a figma node
+This is the UI we should use for exposing policy status
+
 ```application/figma
-akwQrMlIrJ0RQ4G3aydi1v#4:1
+https://figma.com/file/32knfBV3XlaUCvNR6YfkiA#1542:375
 ```
