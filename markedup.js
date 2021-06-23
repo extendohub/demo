@@ -1,10 +1,6 @@
 // This class makes math easy. Consider the following equation:
-// ```github/mermaid
-// graph TD;
-//     A-->B;
-//     A-->C;
-//     B-->D;
-//     C-->D;
+// ```application/figma
+// akwQrMlIrJ0RQ4G3aydi1v#4:1
 // ```
 // With `math` you can do amazing things.
 class Math {
