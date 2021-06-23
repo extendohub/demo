@@ -1,6 +1,6 @@
 // This component implements the UI below for ReallyCoolFeature
 // ```application/figma
-// akwQrMlIrJ0RQ4G3aydi1v#4:1
+// 32knfBV3XlaUCvNR6YfkiA/850:41279#1542:375
 // ```
 // Notice how the font color and the style of the subcomponents fits in with the rest of the overall site.
 
