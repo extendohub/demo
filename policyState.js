@@ -1,8 +1,5 @@
 // This component implements the Policies status UI with a view that summarizes the compliance 
 // state for a given policy. 
-// ```application/figma
-// https://figma.com/file/32knfBV3XlaUCvNR6YfkiA?node-id=1542:375
-// ```
 
 import React, { Component } from 'react'
 import { SocialIcons } from './'
@@ -30,3 +27,22 @@ export default class Footer extends Component {
             GitHub
           </Col>
           <Col sm={4} xs={4} className="vcenter">
+          </Col>
+          <Col sm={4} xs={4} className="vcenter">
+            <div className="pull-right right">
+              <a href="https://docs.github.com/legal/terms" target="_blank" rel="noopener noreferrer">
+                Terms of use
+              </a>{' '}
+              <span>| </span>
+              <a href="https://docs.github.io/legal/privacy" target="_blank" rel="noopener noreferrer">
+                Privacy policy
+              </a>{' '}
+              <span>| </span>
+              <a href="https://docs.github.io/legal/NOTICES">Notices</a>
+            </div>
+          </Col>
+        </Grid>
+      </footer>
+    )
+  }
+}
