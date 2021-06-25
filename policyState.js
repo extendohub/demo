@@ -1,8 +1,8 @@
 // This component implements the Policies status UI with a view that summarizes the compliance 
 // state for a given policy. 
-```application/figma
-https://figma.com/file/32knfBV3XlaUCvNR6YfkiA?node-id=1542:375
-```
+// ```application/figma
+// https://figma.com/file/32knfBV3XlaUCvNR6YfkiA?node-id=1542:375
+// ```
 
 import React, { Component } from 'react'
 import { SocialIcons } from './'
