@@ -6,6 +6,9 @@ GitHub Policies enable teams and organizations to continuously enforce rules and
 
 Users are able to quickly see the status of a given policy with a UI affordance such as:
 
+```application/figma
+https://figma.com/file/32knfBV3XlaUCvNR6YfkiA?node-id=1542:375
+```
 
 Using simple YAML files such as the one below, users can govern a wide range of GitHub configurations and behaviors, as well as the behaviors and workflows used by their teams.
 More sophisticated policies are implemented in Actions-based workflows. GitHub Policies can govern *after-the-fact* or be deeply integrated into the user experience and
