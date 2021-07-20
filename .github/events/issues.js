@@ -1,4 +1,4 @@
-async ({ context, payload }) => {
+export default async ({ context, payload }) => {
   const { github, issue, actor } = context
   console.log(`Detected issue ${payload.action} on issue ${issue.number} by ${actor}`)
   const { data } = await github.rateLimit.get()
