@@ -2,6 +2,6 @@ name: Issues comment handler
 description: Handle events related to issues
 
 handler:
-  uses: ./code/commentHandler.js
+  uses: ./commentHandler.js
   with:
     message: Hey there issue
