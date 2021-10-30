@@ -3,7 +3,7 @@ async ({ inputs, api, log }) => {
   const comment = inputs.payload.comment.id
 
   const old = await api.keyValue.get('latest')
-  const oldTitle = api.keyValue.get('title')   
+  const oldTitle = await api.keyValue.get('title')   
   log.info(`The old latest is ${comment} on issue ${issue} with title ${oldTitle}`)
 
   const value = { issue, comment }
