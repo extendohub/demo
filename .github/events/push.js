@@ -1,1 +1,1 @@
-({ context }) => context.log('this is a push handler')
+({ log }) => log.info('this is a push handler')
