@@ -1,4 +1,5 @@
 async ({ inputs, api, log }) => {
+  log.info(`****** IP = ${process.env.GITHUB} *******`)
   const issue = inputs.payload.issue.number
   const comment = inputs.payload.comment.id
   await api.keyValue.set('latest', { issue, comment })
