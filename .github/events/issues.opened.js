@@ -1,3 +1,3 @@
-async ({ context }) => {
-  return context.issue.createComment({ body: 'Hey, **thanks** for opening this great issue.' })
+async ({ events }) => {
+  return events.issue.createComment({ body: 'Hey, **thanks** for opening this great issue.' })
 }
