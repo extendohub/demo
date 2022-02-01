@@ -6,7 +6,7 @@ const foo = 42
 return render(foo, 'live/value', { color: 'blue' })
 ```
 
-```{javascript#cell2}[live/value(color=red)]
+```{javascript#cell2}[live/value(color='red')]
 42
 ```
 
