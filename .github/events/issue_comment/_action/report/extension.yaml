@@ -1,0 +1,7 @@
+name: Issue comment tracker
+description: Track and report on the latest issue comments
+
+handler:
+  uses: ./index.js
+  with:
+    message: Hey there issue

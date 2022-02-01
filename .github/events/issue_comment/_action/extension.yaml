@@ -1,7 +1,0 @@
-name: Issues comment handler
-description: Handle events related to issues
-
-handler:
-  uses: ./index.js
-  with:
-    message: Hey there issue
