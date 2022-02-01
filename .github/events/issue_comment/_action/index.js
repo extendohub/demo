@@ -5,7 +5,7 @@ async ({ events, helpers, log }) => {
 
   const old = await helpers.keyValue.get('latest')
   const oldTitle = await helpers.keyValue.get('title')   
-  log.info(`The old latest is ${old} on issue ${issue} with title ${oldTitle}`)
+  log.info(`The old latest is ${old.comment} on issue ${old.issue} with title "${oldTitle}"`)
 
   const value = { issue, comment }
   await helpers.keyValue.set('latest', value)
