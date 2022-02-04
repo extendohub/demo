@@ -10,5 +10,5 @@ export default async ({ events, helpers, log }) => {
 }
 
 function delay(time) {
-  return Promise(resolve => setTimeout(() => resolve(), time))
+  return new Promise(resolve => setTimeout(() => resolve(), time))
 } 
