@@ -11,5 +11,5 @@ async ({ events, helpers, log }) => {
   const value = { issue, comment }
   await keyValue.set('latest', value)
   await keyValue.set('title', payload.issue.title)
-  log.info(`The new latest is ${comment} on issue ${issue} with title ${payload.issue.title}`)
+  log.info(`The new latest is ${comment} on issue ${issue} with title "${payload.issue.title}"`)
 }
