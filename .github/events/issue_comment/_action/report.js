@@ -1,14 +1,15 @@
 async ({ events, helpers, log }) => {
+  const { keyValue } = helpers
   const { payload } = events
   const issue = payload.issue.number
   const comment = payload.comment.id
 
-  const old = await helpers.keyValue.get('latest')
-  const oldTitle = await helpers.keyValue.get('title')   
+  const old = await keyValue.get('latest') || {}
+  const oldTitle = await keyValue.get('title') || ''
   log.info(`The old latest is ${old.comment} on issue ${old.issue} with title "${oldTitle}"`)
 
   const value = { issue, comment }
-  await helpers.keyValue.set('latest', value)
-  await helpers.keyValue.set('title', payload.issue.title)
-  log.info(`Comment ${comment} on issue ${issue} is the new latest`)
+  await keyValue.set('latest', value)
+  await keyValue.set('title', payload.issue.title)
+  log.info(`The new latest is ${comment} on issue ${issue} with title "${payload.issue.title}"`)
 }
