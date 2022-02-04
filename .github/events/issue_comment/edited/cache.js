@@ -1,4 +1,4 @@
-async ({ events, helpers, log }) => {
+export default async ({ events, helpers, log }) => {
   const cachedValue = await helpers.cache.get('currentId')
   log.info(`The cached comment is: ${cachedValue}`)
   await helpers.cache.set('currentId', events.payload.comment.id, 2)
