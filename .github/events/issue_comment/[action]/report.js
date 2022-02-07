@@ -4,7 +4,7 @@ async ({ events, context, helpers, log }) => {
   const issue = payload.issue.number
   const comment = payload.comment.id
 
-  log.info(`Processing "${context.config.params.action}" action on issue #${issue}` )
+  log.info(`Processing issue_comment "${context.config.params.action}" action on issue #${issue}` )
   const old = await keyValue.get('latest') || {}
   const oldTitle = await keyValue.get('title') || ''
   log.info(`The old latest is ${old.comment} on issue #${old.issue} with title "${oldTitle}"`)
