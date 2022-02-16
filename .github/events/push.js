@@ -1,3 +1,3 @@
-({ log }) => {
-  log.info('this is a push handler')
+() => {
+  console.log('this is a push handler')
 }
