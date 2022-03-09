@@ -1,3 +1,3 @@
-export default ({ events }) => {
-  console.dir(events.payload)
+export default ({ event }) => {
+  console.dir(event.payload)
 }

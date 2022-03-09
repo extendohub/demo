@@ -1,7 +1,7 @@
 import { keyValue } from '@extendohub/runtime'
 
-export default async ({ events, context }) => {
-  const { payload } = events
+export default async ({ event, context }) => {
+  const { payload } = event
   const issue = payload.issue.number
   const comment = payload.comment.id
 

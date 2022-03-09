@@ -1,9 +1,9 @@
 import { cache } from '@extendohub/runtime'
 
-export default async ({ events }) => {
+export default async ({ event }) => {
   const cachedValue = await cache.get('currentId')
   console.info(`The cached comment is: ${cachedValue}`)
-  await cache.set('currentId', events.payload.comment.id, 2)
+  await cache.set('currentId', event.payload.comment.id, 2)
   const newValue = await cache.get('currentId')
   console.info(`The new comment is: ${newValue}`)
   await delay(2500)

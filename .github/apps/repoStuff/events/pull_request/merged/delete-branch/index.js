@@ -1,7 +1,7 @@
 import { octokit } from '@extendohub/runtime'
 
-export default async ({ events, inputs }) => {
-  const { pullRequest } = events
+export default async ({ event, inputs }) => {
+  const { pullRequest } = event
   const head = pullRequest.head
   if (head.repo.id !== pullRequest.base.repo.id) 
     return console.info(`Closing PR from fork. Keeping ${head.label}`)

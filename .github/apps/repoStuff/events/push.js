@@ -1,1 +1,1 @@
-export default ({events}) => console.log(`pushed ${events.payload.commits.length} commits`)
+export default ({ event }) => console.log(`pushed ${event.payload.commits.length} commits`)
