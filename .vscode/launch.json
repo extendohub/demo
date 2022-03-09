@@ -1,0 +1,20 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "ExtendoHub extension",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "/usr/lib/node_modules/@extendohub/runtime/bin/main.js",
+      "cwd": "${workspaceFolder}/.github/apps/repoStuff/events",
+      "args": ["push.js", "push.json", "debug"],
+      "env": {"NODE_OPTIONS": "--experimental-vm-modules"}
+    }
+  ]
+}

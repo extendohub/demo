@@ -1,0 +1,391 @@
+{
+  "events": {
+    "name": "issues",
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/extendohub/demo/issues/24",
+        "repository_url": "https://api.github.com/repos/extendohub/demo",
+        "labels_url": "https://api.github.com/repos/extendohub/demo/issues/24/labels{/name}",
+        "comments_url": "https://api.github.com/repos/extendohub/demo/issues/24/comments",
+        "events_url": "https://api.github.com/repos/extendohub/demo/issues/24/events",
+        "html_url": "https://github.com/extendohub/demo/issues/24",
+        "id": 1140286838,
+        "node_id": "I_kwDOFIvuy85D92V2",
+        "number": 24,
+        "title": "another new issue",
+        "user": {
+          "login": "jeffmcaffer",
+          "id": 10070956,
+          "node_id": "MDQ6VXNlcjEwMDcwOTU2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10070956?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jeffmcaffer",
+          "html_url": "https://github.com/jeffmcaffer",
+          "followers_url": "https://api.github.com/users/jeffmcaffer/followers",
+          "following_url": "https://api.github.com/users/jeffmcaffer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jeffmcaffer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jeffmcaffer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jeffmcaffer/subscriptions",
+          "organizations_url": "https://api.github.com/users/jeffmcaffer/orgs",
+          "repos_url": "https://api.github.com/users/jeffmcaffer/repos",
+          "events_url": "https://api.github.com/users/jeffmcaffer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jeffmcaffer/received_events",
+          "type": "User",
+          "site_admin": true
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-02-16T16:35:13Z",
+        "updated_at": "2022-02-16T16:35:13Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/extendohub/demo/issues/24/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/extendohub/demo/issues/24/timeline",
+        "performed_via_github_app": null
+      },
+      "repository": {
+        "id": 344714955,
+        "node_id": "MDEwOlJlcG9zaXRvcnkzNDQ3MTQ5NTU=",
+        "name": "demo",
+        "full_name": "extendohub/demo",
+        "private": false,
+        "owner": {
+          "login": "extendohub",
+          "id": 78817434,
+          "node_id": "MDEyOk9yZ2FuaXphdGlvbjc4ODE3NDM0",
+          "avatar_url": "https://avatars.githubusercontent.com/u/78817434?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/extendohub",
+          "html_url": "https://github.com/extendohub",
+          "followers_url": "https://api.github.com/users/extendohub/followers",
+          "following_url": "https://api.github.com/users/extendohub/following{/other_user}",
+          "gists_url": "https://api.github.com/users/extendohub/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/extendohub/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/extendohub/subscriptions",
+          "organizations_url": "https://api.github.com/users/extendohub/orgs",
+          "repos_url": "https://api.github.com/users/extendohub/repos",
+          "events_url": "https://api.github.com/users/extendohub/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/extendohub/received_events",
+          "type": "Organization",
+          "site_admin": false
+        },
+        "html_url": "https://github.com/extendohub/demo",
+        "description": null,
+        "fork": false,
+        "url": "https://api.github.com/repos/extendohub/demo",
+        "forks_url": "https://api.github.com/repos/extendohub/demo/forks",
+        "keys_url": "https://api.github.com/repos/extendohub/demo/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/extendohub/demo/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/extendohub/demo/teams",
+        "hooks_url": "https://api.github.com/repos/extendohub/demo/hooks",
+        "issue_events_url": "https://api.github.com/repos/extendohub/demo/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/extendohub/demo/events",
+        "assignees_url": "https://api.github.com/repos/extendohub/demo/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/extendohub/demo/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/extendohub/demo/tags",
+        "blobs_url": "https://api.github.com/repos/extendohub/demo/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/extendohub/demo/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/extendohub/demo/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/extendohub/demo/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/extendohub/demo/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/extendohub/demo/languages",
+        "stargazers_url": "https://api.github.com/repos/extendohub/demo/stargazers",
+        "contributors_url": "https://api.github.com/repos/extendohub/demo/contributors",
+        "subscribers_url": "https://api.github.com/repos/extendohub/demo/subscribers",
+        "subscription_url": "https://api.github.com/repos/extendohub/demo/subscription",
+        "commits_url": "https://api.github.com/repos/extendohub/demo/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/extendohub/demo/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/extendohub/demo/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/extendohub/demo/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/extendohub/demo/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/extendohub/demo/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/extendohub/demo/merges",
+        "archive_url": "https://api.github.com/repos/extendohub/demo/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/extendohub/demo/downloads",
+        "issues_url": "https://api.github.com/repos/extendohub/demo/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/extendohub/demo/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/extendohub/demo/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/extendohub/demo/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/extendohub/demo/labels{/name}",
+        "releases_url": "https://api.github.com/repos/extendohub/demo/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/extendohub/demo/deployments",
+        "created_at": "2021-03-05T06:21:54Z",
+        "updated_at": "2022-02-03T00:29:22Z",
+        "pushed_at": "2022-02-16T16:30:10Z",
+        "git_url": "git://github.com/extendohub/demo.git",
+        "ssh_url": "git@github.com:extendohub/demo.git",
+        "clone_url": "https://github.com/extendohub/demo.git",
+        "svn_url": "https://github.com/extendohub/demo",
+        "homepage": null,
+        "size": 2216,
+        "stargazers_count": 1,
+        "watchers_count": 1,
+        "language": "JavaScript",
+        "has_issues": true,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "forks_count": 1,
+        "mirror_url": null,
+        "archived": false,
+        "disabled": false,
+        "open_issues_count": 6,
+        "license": null,
+        "allow_forking": true,
+        "is_template": false,
+        "topics": [
+          "extendo-hub",
+          "github"
+        ],
+        "visibility": "public",
+        "forks": 1,
+        "open_issues": 6,
+        "watchers": 1,
+        "default_branch": "main"
+      },
+      "organization": {
+        "login": "extendohub",
+        "id": 78817434,
+        "node_id": "MDEyOk9yZ2FuaXphdGlvbjc4ODE3NDM0",
+        "url": "https://api.github.com/orgs/extendohub",
+        "repos_url": "https://api.github.com/orgs/extendohub/repos",
+        "events_url": "https://api.github.com/orgs/extendohub/events",
+        "hooks_url": "https://api.github.com/orgs/extendohub/hooks",
+        "issues_url": "https://api.github.com/orgs/extendohub/issues",
+        "members_url": "https://api.github.com/orgs/extendohub/members{/member}",
+        "public_members_url": "https://api.github.com/orgs/extendohub/public_members{/member}",
+        "avatar_url": "https://avatars.githubusercontent.com/u/78817434?v=4",
+        "description": "Funky GitHub extensibility"
+      },
+      "sender": {
+        "login": "jeffmcaffer",
+        "id": 10070956,
+        "node_id": "MDQ6VXNlcjEwMDcwOTU2",
+        "avatar_url": "https://avatars.githubusercontent.com/u/10070956?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/jeffmcaffer",
+        "html_url": "https://github.com/jeffmcaffer",
+        "followers_url": "https://api.github.com/users/jeffmcaffer/followers",
+        "following_url": "https://api.github.com/users/jeffmcaffer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/jeffmcaffer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/jeffmcaffer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/jeffmcaffer/subscriptions",
+        "organizations_url": "https://api.github.com/users/jeffmcaffer/orgs",
+        "repos_url": "https://api.github.com/users/jeffmcaffer/repos",
+        "events_url": "https://api.github.com/users/jeffmcaffer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/jeffmcaffer/received_events",
+        "type": "User",
+        "site_admin": true
+      },
+      "installation": {
+        "id": 16500991,
+        "node_id": "MDIzOkludGVncmF0aW9uSW5zdGFsbGF0aW9uMTY1MDA5OTE="
+      }
+    },
+    "issues": {
+      "spec": {
+        "owner": "extendohub",
+        "repo": "demo",
+        "issue_number": 24
+      },
+      "target": {
+        "url": "https://api.github.com/repos/extendohub/demo/issues/24",
+        "repository_url": "https://api.github.com/repos/extendohub/demo",
+        "labels_url": "https://api.github.com/repos/extendohub/demo/issues/24/labels{/name}",
+        "comments_url": "https://api.github.com/repos/extendohub/demo/issues/24/comments",
+        "events_url": "https://api.github.com/repos/extendohub/demo/issues/24/events",
+        "html_url": "https://github.com/extendohub/demo/issues/24",
+        "id": 1140286838,
+        "node_id": "I_kwDOFIvuy85D92V2",
+        "number": 24,
+        "title": "another new issue",
+        "user": {
+          "login": "jeffmcaffer",
+          "id": 10070956,
+          "node_id": "MDQ6VXNlcjEwMDcwOTU2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/10070956?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jeffmcaffer",
+          "html_url": "https://github.com/jeffmcaffer",
+          "followers_url": "https://api.github.com/users/jeffmcaffer/followers",
+          "following_url": "https://api.github.com/users/jeffmcaffer/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jeffmcaffer/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jeffmcaffer/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jeffmcaffer/subscriptions",
+          "organizations_url": "https://api.github.com/users/jeffmcaffer/orgs",
+          "repos_url": "https://api.github.com/users/jeffmcaffer/repos",
+          "events_url": "https://api.github.com/users/jeffmcaffer/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jeffmcaffer/received_events",
+          "type": "User",
+          "site_admin": true
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-02-16T16:35:13Z",
+        "updated_at": "2022-02-16T16:35:13Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/extendohub/demo/issues/24/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/extendohub/demo/issues/24/timeline",
+        "performed_via_github_app": null
+      },
+      "addLabels": {
+        "__marker": "deadbeef",
+        "type": "rest",
+        "base": "issues.addLabels",
+        "defaults": null,
+        "options": {
+          "owner": "extendohub",
+          "repo": "demo",
+          "issue_number": 24
+        }
+      },
+      "close": {
+        "__marker": "deadbeef",
+        "type": "rest",
+        "base": "issues.update",
+        "defaults": null,
+        "options": {
+          "owner": "extendohub",
+          "repo": "demo",
+          "issue_number": 24,
+          "state": "closed"
+        }
+      },
+      "comment": {
+        "__marker": "deadbeef",
+        "type": "rest",
+        "base": "issues.createComment",
+        "defaults": null,
+        "options": {
+          "owner": "extendohub",
+          "repo": "demo",
+          "issue_number": 24
+        }
+      },
+      "lock": {
+        "__marker": "deadbeef",
+        "type": "rest",
+        "base": "issues.lock",
+        "defaults": null,
+        "options": {
+          "owner": "extendohub",
+          "repo": "demo",
+          "issue_number": 24
+        }
+      },
+      "removeLabel": {
+        "__marker": "deadbeef",
+        "type": "rest",
+        "base": "issues.removeLabel",
+        "defaults": null,
+        "options": {
+          "owner": "extendohub",
+          "repo": "demo",
+          "issue_number": 24
+        }
+      },
+      "unlock": {
+        "__marker": "deadbeef",
+        "type": "rest",
+        "base": "issues.unlock",
+        "defaults": null,
+        "options": {
+          "owner": "extendohub",
+          "repo": "demo",
+          "issue_number": 24
+        }
+      },
+      "update": {
+        "__marker": "deadbeef",
+        "type": "rest",
+        "base": "issues.update",
+        "defaults": null,
+        "options": {
+          "owner": "extendohub",
+          "repo": "demo",
+          "issue_number": 24
+        }
+      }
+    }
+  },
+  "context": {
+    "config": {
+      "key": {
+        "scope": 3,
+        "providerType": 3,
+        "providerId": 344714955,
+        "point": "events",
+        "pointPath": "issues/opened",
+        "configPath": "auto-respond",
+        "basename": "auto-respond",
+        "providerPath": ".github/events/issues/opened/auto-respond.js",
+        "sha": "c4df02d5aa985bd0f325016a2fae2bc2db1c017d"
+      },
+      "params": {}
+    },
+    "actor": {}
+  },
+  "helpers": {
+    "octokit": {
+      "resource": {
+        "type": 3,
+        "id": 344714955
+      },
+      "provider": {
+        "type": 3,
+        "id": 344714955
+      }
+    },
+    "keyValue": {
+      "url": "http://<EXTENDOHUB>:3000/keyValue/3/344714955/3/344714955"
+    },
+    "_": {},
+    "got": {},
+    "cache": {
+      "url": "http://<EXTENDOHUB>:3000/cache/3/344714955/3/344714955"
+    },
+    "blob": {
+      "url": "http://<EXTENDOHUB>:3000/blob/3/344714955/3/344714955"
+    }
+  },
+  "env": {}
+}
