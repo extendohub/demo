@@ -470,7 +470,7 @@
     },
     "actor": {}
   },
-  "helpers": {
+  "exports": {
     "octokit": {
       "resource": {
         "type": 3,
