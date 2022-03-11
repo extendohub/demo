@@ -1,0 +1,1 @@
+Wow, this is a static text file. should show up at /<app>/test.txt
