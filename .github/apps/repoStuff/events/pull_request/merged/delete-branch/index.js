@@ -1,4 +1,4 @@
-import { octokit } from '@extendohub/runtime'
+import { octokit } from '@extendohub/services'
 
 export default async ({ event, inputs }) => {
   const { pullRequest } = event

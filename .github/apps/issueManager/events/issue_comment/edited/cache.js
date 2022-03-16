@@ -1,4 +1,4 @@
-import { cache } from '@extendohub/runtime'
+import { cache } from '@extendohub/storage'
 
 export default async ({ event }) => {
   const cachedValue = await cache.get('currentId')
