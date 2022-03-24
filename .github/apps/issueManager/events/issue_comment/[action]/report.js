@@ -15,3 +15,4 @@ export default async ({ event, context }) => {
   await kv.set('title', payload.issue.title)
   console.info(`The new latest is ${comment} on issue #${issue} with title "${payload.issue.title}"`)
 }
+ 
