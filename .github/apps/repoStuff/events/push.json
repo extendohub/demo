@@ -99,7 +99,7 @@
         "allow_forking": true,
         "is_template": false,
         "topics": [
-          "extendo-hub",
+          "extendohub",
           "github"
         ],
         "visibility": "public",
